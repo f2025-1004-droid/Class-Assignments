@@ -1,0 +1,85 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+
+    int sub1, sub2, sub3, sub4, sub5, total, obtained;
+    string grade, pass_status;
+    float per;
+    cout << "Enter   number of subject 1:";
+    cin >> sub1;
+    cout << "Enter   number of subject 2:";
+    cin >> sub2;
+    cout << "Enter   number of subject3:";
+    cin >> sub3;
+    cout << "Enter   number of subject4:";
+    cin >> sub4;
+    cout << "Enter   number of subject5:";
+    cin >> sub5;
+    obtained = sub1 + sub2 + sub3 + sub4 + sub5;
+    cout << "Enter total marks :";
+    cin >> total;
+    per = (obtained / total) * 100;
+    per >= 50 ? pass_status = "Pass" : pass_status = "Fail";
+    if (per >= 90)
+    {
+        grade = "A+";
+    }
+    else if (per >= 80)
+    {
+        grade = "A";
+    }
+    else if (per >= 70)
+    {
+        grade = "B";
+    }
+    else if (per >= 60)
+    {
+        grade = "C";
+    }
+    else if (per >= 50)
+    {
+        grade = "D";
+    }
+    else
+    {
+        grade = "F";
+    }
+
+    cout << "\n";
+    cout << "------------------------------------------------------------------\n";
+    cout << setw(20) << left << "SUBJECT";
+
+    cout << setw(20) << left << "OBTAINED";
+    cout << setw(20) << left << "TOTAL";
+    cout << "\n";
+    cout << "------------------------------------------------------------------\n";
+    cout << setw(20) << left << "ENGLISH";
+    cout << setw(20) << left << sub1;
+    cout << setw(20) << left << "100\n";
+
+    cout << setw(20) << left << "URDU";
+    cout << setw(20) << left << sub2;
+    cout << setw(20) << left << "100\n";
+
+    cout << setw(20) << left << "ISLAMIAT";
+    cout << setw(20) << left << sub3;
+    cout << setw(20) << left << "100\n";
+
+    cout << setw(20) << left << "PAK STUDY";
+    cout << setw(20) << left << sub4;
+    cout << setw(20) << left << "100\n";
+
+    cout << setw(20) << left << "COMPUTER SCIENCE";
+    cout << setw(20) << left << sub5;
+    cout << setw(20) << left << "100\n";
+
+    cout << setw(20) << left << obtained;
+    cout << setw(20) << left << total;
+
+    return 0;
+}

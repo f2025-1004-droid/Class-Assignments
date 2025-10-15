@@ -3,29 +3,34 @@
 using namespace std;
 int main()
 {
-    int num1;
-    int num2;
-    int sum;
-    cout<<"Enter first number:";
-    cin>>num1;
-    cout<<"Enter your second number:";
-    cin>>num2;
-    
-    sum=num1+num2;
-    cout<<"The sum of two numbers is:\t"<<sum<<endl;
-     int difference;
-     difference=num1-num2;
-     cout<<"The difference of two numbers is:\t"<<difference<<endl;
-     
-     int product;
-     product=num1*num2;
-     cout<<"The product of two numbers is :\t"<<product<<endl;
-     int quotient;
-     quotient=num1/num2;
-     cout<<"the quotent of two numbers is :\t"<<quotient<<endl;
-     string gmail;
-     cout<<"enter your gmail:";
-     getline(cin,gmail);
-    
-    return 0;
+int a,b,c;
+cout<<"Enter your Obtained marks:";
+cin>>a;
+cout<<"Enter your total marks:";
+cin>>b;
+c=(a/b)*100;
+if(c>=90){
+    cout<<"your perntage is:"<<c<<" "<<"Grade :A"<<endl;
+}
+else if(c>=80)
+{
+    cout<<"Your percentage :"<<c<<" "<<"Grade :B"<<endl;
+
+}
+else if (c>=70)
+{
+cout<<"Your percentage:"<<c<<" "<<"Grade:C"<<endl;
+}
+else if (c>=60)
+{
+cout<<"your percentage:"<<c<<" "<<"Grade :D"<<endl;
+}
+else
+{
+    cout<<"Your are faild my dear .Do not loss hope "<<endl;
+}
+return 0;
+
+
+
 }
