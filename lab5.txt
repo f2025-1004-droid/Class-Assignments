@@ -1,0 +1,30 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    int num;
+cout << "Enter number upto which print prime numbers!" << endl;
+    cin >> num;
+
+    for (int i = 2; i <= num; i++)
+    {
+        int num2 = 2, validator = 0;
+        while (num2 <= i / 2)
+        {
+            if (i % num2 == 0)
+            {
+                validator = 1;
+                break;
+            }
+            num2++;
+        }
+
+        if (validator == 0)
+        {
+            cout << i <<",";
+        }
+    }
+
+    return 0;
+}
